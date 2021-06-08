@@ -1,0 +1,18 @@
+
+
+.body-text {
+}
+
+.page-break {
+    border-bottom: 1px solid red;
+    @apply w-1/2 mx-auto border-gray-500 block;
+}
+
+.chevron {
+    //transform: translateY(100px);
+    transition: 0.3s ease transform;
+    cursor: pointer;
+    &:hover {
+        transform: translateY(5px);
+    }
+}

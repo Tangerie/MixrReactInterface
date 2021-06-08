@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.button-primary {
+    @apply px-6 py-4 bg-brand-400 text-white rounded hover:bg-brand-500 transition-all;
+}
+
+.button-primary:disabled {
+    @apply bg-gray-500 cursor-default;
+}
+
+.button-secondary {
+    @apply px-4 py-3 bg-transparent border-2 border-brand-400 text-brand-400 rounded hover:bg-brand-400 hover:text-white transition-all;
+}
+
+.button-secondary:disabled {
+    @apply border-gray-500 cursor-default;
+}
+
+.banner-gradient {
+    @apply bg-gradient-to-b from-blue-400 via-purple-500 to-red-400 bg-fixed;
+}
+
+.heading-sub {
+    @apply text-2xl text-brand-500 font-light;
+}
+
+.white-box {
+    @apply bg-white p-5 rounded-lg shadow-2xl;
+}
+
+@tailwind utilities;
